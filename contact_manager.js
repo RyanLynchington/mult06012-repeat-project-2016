@@ -13,4 +13,13 @@ function mySubmit() {
 			firstNameText += myFirstName[firstNameHere] + "";
 		myNameCell.innerHTML = firstNameText;
 			}
+			
+	var myLastName = document.getElementById("surname").value;
+	var lastNameText = "";
+	var lastNameHere;
+	var mySurnameCell = myNewRow.insertCell(1);
+		for (lastNameHere in myLastName) {
+			lastNameText += myLastName[lastNameHere] + "";
+		mySurnameCell.innerHTML = lastNameText;
+			}
 }
