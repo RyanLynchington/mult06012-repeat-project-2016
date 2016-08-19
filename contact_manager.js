@@ -31,4 +31,13 @@ function mySubmit() {
 			DoBText += myDateOfBirth[DoBHere] + "";
 		myDoBCell.innerHTML = DoBText;
 			}
+			
+	var myNumber = document.getElementById("number").value;
+	var numberText = "";
+	var numberHere;
+	var myNumberCell = myNewRow.insertCell(3);
+		for (numberHere in myNumber) {
+			numberText += myNumber[numberHere] + "";
+		myNumberCell.innerHTML = numberText;
+			}
 }
