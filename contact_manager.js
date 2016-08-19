@@ -22,4 +22,13 @@ function mySubmit() {
 			lastNameText += myLastName[lastNameHere] + "";
 		mySurnameCell.innerHTML = lastNameText;
 			}
+			
+	var myDateOfBirth = document.getElementById("DoB").value;
+	var DoBText = "";
+	var DoBHere;
+	var myDoBCell = myNewRow.insertCell(2);
+		for (DoBHere in myDateOfBirth) {
+			DoBText += myDateOfBirth[DoBHere] + "";
+		myDoBCell.innerHTML = DoBText;
+			}
 }
