@@ -40,4 +40,13 @@ function mySubmit() {
 			numberText += myNumber[numberHere] + "";
 		myNumberCell.innerHTML = numberText;
 			}
+			
+	var myEmail = document.getElementById("email").value;
+	var emailText = "";
+	var emailHere;
+	var myEmailCell = myNewRow.insertCell(4);
+		for (emailHere in myEmail) {
+			emailText += myEmail[emailHere] + "";
+		myEmailCell.innerHTML = emailText;
+			}
 }
