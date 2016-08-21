@@ -49,4 +49,17 @@ function mySubmit() {
 			emailText += myEmail[emailHere] + "";
 		myEmailCell.innerHTML = emailText;
 			}
+	
+	/*var myRowDeleteButton = document.createElement('button');
+	var myDeleteRow = ""
+	var deleteHere;
+	var addDeleteCell = myNewRow.insertCell(5);
+	button.innerHTML = "Delete";
+	button.onClick = function() {
+		for (deleteHere in myRowDeleteButton) {
+			myDeleteRow += myRowDeleteButton[deleteHere] + "";
+			addDeleteCell.innerHTML = myDeleteRow
+			}
+	document.body.appendChild(button);
+	}*/
 }
