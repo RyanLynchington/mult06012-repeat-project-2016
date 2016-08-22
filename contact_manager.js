@@ -50,16 +50,11 @@ function mySubmit() {
 		myEmailCell.innerHTML = emailText;
 			}
 	
-	/*var myRowDeleteButton = document.createElement('button');
-	var myDeleteRow = ""
-	var deleteHere;
+	var myRowDeleteButton = document.createElement("button");
+	var DeleteButtonTable = document.createTextNode("Delete");
 	var addDeleteCell = myNewRow.insertCell(5);
-	button.innerHTML = "Delete";
-	button.onClick = function() {
-		for (deleteHere in myRowDeleteButton) {
-			myDeleteRow += myRowDeleteButton[deleteHere] + "";
-			addDeleteCell.innerHTML = myDeleteRow
-			}
-	document.body.appendChild(button);
-	}*/
+	myRowDeleteButton.appendChild(DeleteButtonTable);
+	addDeleteCell.appendChild(myRowDeleteButton);
+	myRowDeleteButton.id = (contactManagerTable);
+
 }
