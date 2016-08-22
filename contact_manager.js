@@ -1,4 +1,7 @@
 window.onload = myForm;
+
+var information = new Array();
+
 var myForm = [];
 function mySubmit() {
 	
@@ -56,5 +59,9 @@ function mySubmit() {
 	myRowDeleteButton.appendChild(DeleteButtonTable);
 	addDeleteCell.appendChild(myRowDeleteButton);
 	myRowDeleteButton.id = (contactManagerTable);
+	
+}
 
+	function myDelete() {
+    	document.getElementById("contactManagerTable").deleteRow(-1);
 }
